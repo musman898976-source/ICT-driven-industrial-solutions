@@ -1,89 +1,54 @@
-:root {
-    --industrial-blue: #2c3e50;
-    --accent-orange: #e67e22;
-    --light-gray: #f4f7f6;
-    --dark-text: #333;
+.content-body {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
 }
 
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    color: var(--dark-text);
-    background-color: #fff;
+.step {
+    border-left: 5px solid var(--industrial-blue);
+    padding-left: 20px;
+    margin-bottom: 30px;
 }
 
-header {
-    background: var(--industrial-blue);
-    color: white;
-    padding: 1rem 5%;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-}
-
-nav ul li {
-    margin-left: 20px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: 600;
-}
-
-.hero {
-    background: linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.8)), url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158') center/cover;
-    height: 40vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-}
-
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 2rem 5%;
-}
-
-.card {
-    border-top: 4px solid var(--accent-orange);
-    background: var(--light-gray);
-    padding: 20px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-}
-
-.case-container {
-    display: flex;
-    gap: 20px;
+.roadmap-table {
+    width: 100%;
+    border-collapse: collapse;
     margin-top: 20px;
 }
 
-.before, .after {
-    flex: 1;
-    padding: 20px;
-    border-radius: 5px;
+.roadmap-table th, .roadmap-table td {
+    text-align: left;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
 }
 
-.before { background: #ffebee; border: 1px solid #c62828; }
-.after { background: #e8f5e9; border: 1px solid #2e7d32; }
+.roadmap-table th {
+    background-color: var(--industrial-blue);
+    color: white;
+}
 
-footer {
-    text-align: center;
-    padding: 2rem;
+.tool-box {
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+.btn {
+    display: inline-block;
+    background: var(--accent-orange);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+button {
     background: var(--industrial-blue);
     color: white;
-    margin-top: 40px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 15px;
 }
