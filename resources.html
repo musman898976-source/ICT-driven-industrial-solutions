@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resources & Frameworks | Industrial ICT</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">IND-ICT</div>
+            <ul>
+                <li><a href="index.html">The Problem</a></li>
+                <li><a href="solutions.html">ICT Solutions</a></li>
+                <li><a href="case-studies.html">Case Studies</a></li>
+                <li><a href="implementation.html">Implementation</a></li>
+                <li><a href="resources.html">Resources</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="content-body">
+        <h2>Industrial Decision Support</h2>
+        <div class="tool-box">
+            <h3>ICT Readiness Checklist</h3>
+            <form id="readinessForm">
+                <label><input type="checkbox" class="score" value="20"> Do you have a centralized database for inventory?</label><br>
+                <label><input type="checkbox" class="score" value="20"> Are your critical machines connected to a network?</label><br>
+                <label><input type="checkbox" class="score" value="20"> Do you have a documented cybersecurity protocol?</label><br>
+                <label><input type="checkbox" class="score" value="20"> Is your downtime tracked automatically (not manually)?</label><br>
+                <button type="button" onclick="calculateScore()">Analyze Readiness</button>
+            </form>
+            <p id="scoreResult"></p>
+        </div>
+
+        
+
+        <div class="framework-download">
+            <h3>The OEE ICT Framework</h3>
+            <p>Download our original framework for calculating <strong>Overall Equipment Effectiveness</strong> through ICT integration.</p>
+            <a href="#" class="btn">Download Whitepaper (PDF)</a>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
